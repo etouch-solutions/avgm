@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Mortgage Loans - AVGM Associates</title>
+    <meta name="description" content="Leverage your property value with home mortgage loans. Competitive rates and flexible terms for your financial needs.">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav-container">
+            <a href="index.html" class="logo">AVGM <span>Associates</span></a>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="real-estate.html">Real Estate</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" style="min-height: 70vh; background: linear-gradient(rgba(0,51,102,0.9), rgba(231,184,77,0.9)), url('https://images.pexels.com/photos/534228/pexels-photo-534228.jpeg') center/cover;">
+        <div class="container">
+            <div class="hero-content text-center">
+                <h1>Home Mortgage Loans</h1>
+                <p>Unlock the value of your property for business expansion, education, or any financial need</p>
+                <div style="margin-top: 2rem;">
+                    <div style="display: inline-block; background: rgba(255,255,255,0.9); color: var(--primary-blue); padding: 1rem 2rem; border-radius: var(--border-radius); margin: 0 1rem;">
+                        <strong>Interest Rate: From 8.0%</strong>
+                    </div>
+                    <div style="display: inline-block; background: rgba(255,255,255,0.9); color: var(--primary-blue); padding: 1rem 2rem; border-radius: var(--border-radius); margin: 0 1rem;">
+                        <strong>Loan Amount: Up to ₹3 Crores</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fixed vs Floating Comparison -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title text-center fade-in">Fixed vs Floating Interest Rates</h2>
+            <div class="comparison-container fade-in">
+                <div class="comparison-card">
+                    <h3 style="color: var(--primary-blue); margin-bottom: 2rem;">🔒 Fixed Interest Rate</h3>
+                    <div style="font-size: 2rem; font-weight: 700; color: var(--accent-gold); margin-bottom: 1rem;">8.5% - 10.0%</div>
+                    <ul style="text-align: left;">
+                        <li>✅ Rate remains constant throughout loan tenure</li>
+                        <li>✅ Predictable EMI amount</li>
+                        <li>✅ Protection against rate increases</li>
+                        <li>❌ Higher initial rates</li>
+                        <li>❌ No benefit from rate decreases</li>
+                        <li>❌ Prepayment charges apply</li>
+                    </ul>
+                    <div style="margin-top: 2rem;">
+                        <strong>Best for:</strong> Risk-averse borrowers preferring payment certainty
+                    </div>
+                </div>
+                <div class="comparison-card featured">
+                    <div style="background: var(--accent-gold); color: var(--primary-blue); padding: 0.5rem; border-radius: var(--border-radius); margin-bottom: 1rem; font-weight: 600;">RECOMMENDED</div>
+                    <h3 style="color: var(--white); margin-bottom: 2rem;">📈 Floating Interest Rate</h3>
+                    <div style="font-size: 2rem; font-weight: 700; color: var(--accent-gold); margin-bottom: 1rem;">8.0% - 9.5%</div>
+                    <ul style="text-align: left;">
+                        <li>✅ Lower initial rates</li>
+                        <li>✅ Benefit from rate decreases</li>
+                        <li>✅ No prepayment charges</li>
+                        <li>✅ More flexible terms</li>
+                        <li>❌ EMI fluctuates with market rates</li>
+                        <li>❌ Uncertainty in total interest</li>
+                    </ul>
+                    <div style="margin-top: 2rem;">
+                        <strong>Best for:</strong> Most borrowers seeking lower costs and flexibility
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interest Rate Slider -->
+    <section class="section" style="background: var(--light-gray);">
+        <div class="container">
+            <h2 class="section-title text-center fade-in">Mortgage Loan Calculator</h2>
+            <div class="emi-calculator fade-in">
+                <div class="grid grid-2">
+                    <div>
+                        <div class="slider-container">
+                            <label>Property Value: <span id="propertyValueDisplay">₹75,00,000</span></label>
+                            <input type="range" id="propertyValue" class="slider" min="1000000" max="50000000" value="7500000" step="100000">
+                        </div>
+                        <div class="slider-container">
+                            <label>Loan Amount (70% of property): <span id="loanAmountDisplay">₹52,50,000</span></label>
+                            <input type="range" id="loanPercentage" class="slider" min="50" max="80" value="70" step="5">
+                        </div>
+                        <div class="slider-container">
+                            <label>Loan Tenure: <span id="tenureDisplay">180 months</span></label>
+                            <input type="range" id="mortgageTenure" class="slider" min="60" max="240" value="180" step="12">
+                        </div>
+                        <div class="slider-container">
+                            <label>Interest Rate: <span id="rateDisplay">8.5%</span></label>
+                            <input type="range" id="mortgageRate" class="slider" min="8" max="12" value="8.5" step="0.1">
+                        </div>
+                    </div>
+                    <div style="display: flex; align-items: center; justify-content: center;">
+                        <div style="text-align: center; background: var(--primary-blue); color: var(--white); padding: 3rem; border-radius: var(--border-radius);">
+                            <h3>Monthly EMI</h3>
+                            <div style="font-size: 2.5rem; font-weight: 700; color: var(--accent-gold); margin: 1rem 0;" id="mortgageEMI">₹54,129</div>
+                            <div style="margin-top: 2rem; font-size: 0.9rem;">
+                                <div>Loan Amount: <span id="finalLoanAmount">₹52,50,000</span></div>
+                                <div>Total Interest: <span id="totalMortgageInterest">₹44,93,220</span></div>
+                                <div>Processing Fee: <span id="processingFee">₹52,500</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mortgage Uses -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title text-center fade-in">What Can You Use Mortgage Loans For?</h2>
+            <div class="grid grid-3">
+                <div class="fade-in">
+                    <div style="background: var(--white); padding: 2rem; border-radius: var(--border-radius); box-shadow: var(--shadow); text-align: center; height: 100%;">
+                        <div style="font-size: 3rem; margin-bottom: 1rem; color: var(--primary-blue);">💼</div>
+                        <h3>Business Expansion</h3>
+                        <p>Fund your business growth, purchase equipment, expand operations, or meet working capital requirements.</p>
+                        <ul style="text-align: left; margin-top: 1rem;">
+                            <li>• Working capital funding</li>
+                            <li>• Equipment purchase</li>
+                            <li>• Business premises</li>
+                            <li>• Inventory financing</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="fade-in">
+                    <div style="background: var(--white); padding: 2rem; border-radius: var(--border-radius); box-shadow: var(--shadow); text-align: center; height: 100%;">
+                        <div style="font-size: 3rem; margin-bottom: 1rem; color: var(--accent-gold);">🎓</div>
+                        <h3>Education & Training</h3>
+                        <p>Finance higher education, professional courses, or skill development programs for yourself or family members.</p>
+                        <ul style="text-align: left; margin-top: 1rem;">
+                            <li>• Higher education abroad</li>
+                            <li>• Professional courses</li>
+                            <li>• Vocational training</li>
+                            <li>• Research programs</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="fade-in">
+                    <div style="background: var(--white); padding: 2rem; border-radius: var(--border-radius); box-shadow: var(--shadow); text-align: center; height: 100%;">
+                        <div style="font-size: 3rem; margin-bottom: 1rem; color: var(--primary-blue);">🏠</div>
+                        <h3>Property Investment</h3>
+                        <p>Purchase additional properties, invest in real estate, or fund home renovation and improvement projects.</p>
+                        <ul style="text-align: left; margin-top: 1rem;">
+                            <li>• Second home purchase</li>
+                            <li>• Investment properties</li>
+                            <li>• Home renovation</li>
+                            <li>• Property development</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="fade-in">
+                    <div style="background: var(--white); padding: 2rem; border-radius: var(--border-radius); box-shadow: var(--shadow); text-align: center; height: 100%;">
+                        <div style="font-size: 3rem; margin-bottom: 1rem; color: var(--accent-gold);">🏥</div>
+                        <h3>Medical Emergencies</h3>
+                        <p>Handle unexpected medical expenses, surgeries, or long-term treatment costs for family members.</p>
+                        <ul style="text-align: left; margin-top: 1rem;">
+                            <li>• Emergency surgeries</li>
+                            <li>• Long-term treatments</li>
+                            <li>• Medical equipment</li>
+                            <li>• Health insurance gaps</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="fade-in">
+                    <div style="background: var(--white); padding: 2rem; border-radius: var(--border-radius); box-shadow: var(--shadow); text-align: center; height: 100%;">
+                        <div style="font-size: 3rem; margin-bottom: 1rem; color: var(--primary-blue);">💒</div>
+                        <h3>Weddings & Events</h3>
+                        <p>Finance wedding celebrations, family functions, or other significant life events and ceremonies.</p>
+                        <ul style="text-align: left; margin-top: 1rem;">
+                            <li>• Wedding ceremonies</li>
+                            <li>• Reception venues</li>
+                            <li>• Jewelry & gifts</li>
+                            <li>• Family celebrations</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="fade-in">
+                    <div style="background: var(--white); padding: 2rem; border-radius: var(--border-radius); box-shadow: var(--shadow); text-align: center; height: 100%;">
+                        <div style="font-size: 3rem; margin-bottom: 1rem; color: var(--accent-gold);">🔄</div>
+                        <h3>Debt Consolidation</h3>
+                        <p>Consolidate multiple high-interest loans and credit card debts into a single, lower-rate mortgage loan.</p>
+                        <ul style="text-align: left; margin-top: 1rem;">
+                            <li>• Credit card debts</li>
+                            <li>• Personal loans</li>
+                            <li>• Business loans</li>
+                            <li>• Multiple EMI management</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Features -->
+    <section class="section" style="background: var(--primary-blue); color: var(--white);">
+        <div class="container">
+            <h2 class="text-center fade-in" style="color: var(--white); margin-bottom: 3rem;">Home Mortgage Key Features</h2>
+            <div class="table-container fade-in">
+                <table style="background: rgba(255,255,255,0.1);">
+                    <thead>
+                        <tr style="background: var(--accent-gold); color: var(--primary-blue);">
+                            <th>Feature</th>
+                            <th>Details</th>
+                        </tr>
+                    </thead>
+                    <tbody style="color: var(--white);">
+                        <tr>
+                            <td><strong>Interest Rate</strong></td>
+                            <td>8.0% - 10.5% per annum</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Loan Amount</strong></td>
+                            <td>₹10 lakhs to ₹3 crores</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Loan-to-Value</strong></td>
+                            <td>Up to 80% of property value</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Repayment Tenure</strong></td>
+                            <td>5 to 20 years</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Processing Time</strong></td>
+                            <td>7-10 working days</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Processing Fee</strong></td>
+                            <td>0.5% - 1% of loan amount</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Prepayment</strong></td>
+                            <td>No charges for floating rate</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Tax Benefits</strong></td>
+                            <td>Available on interest payments</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Application Process -->
+    <section class="section" style="background: var(--light-gray);">
+        <div class="container">
+            <h2 class="section-title text-center fade-in">Simple Application Process</h2>
+            <div class="process-flow">
+                <div class="process-step fade-in">
+                    <div class="process-icon">📋</div>
+                    <h3>Application</h3>
+                    <p>Submit your mortgage loan application with basic property and income details</p>
+                </div>
+                <div class="process-step fade-in">
+                    <div class="process-icon">🔍</div>
+                    <h3>Evaluation</h3>
+                    <p>Property valuation and document verification by our expert team</p>
+                </div>
+                <div class="process-step fade-in">
+                    <div class="process-icon">✅</div>
+                    <h3>Approval</h3>
+                    <p>Quick loan approval based on property value and repayment capacity</p>
+                </div>
+                <div class="process-step fade-in">
+                    <div class="process-icon">💰</div>
+                    <h3>Disbursement</h3>
+                    <p>Fast disbursement directly to your account upon completion of formalities</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="section" style="background: var(--accent-gold); color: var(--primary-blue);">
+        <div class="container text-center">
+            <h2 class="fade-in">Unlock Your Property's Value Today</h2>
+            <p class="fade-in" style="font-size: 1.3rem; margin-bottom: 2rem;">Get a mortgage loan against your property at competitive interest rates with flexible repayment options.</p>
+            <div class="fade-in">
+                <a href="contact.html" class="btn" style="background: var(--primary-blue); color: var(--white);">Apply for Mortgage</a>
+                <a href="valuation.html" class="btn btn-outline" style="margin-left: 1rem; border-color: var(--primary-blue); color: var(--primary-blue);">Get Property Valued</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>AVGM Financial Services</h3>
+                    <p>Your trusted partner in real estate and financial solutions. We provide comprehensive services to help you achieve your property and financial goals.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <p><a href="index.html">Home</a></p>
+                    <p><a href="about.html">About Us</a></p>
+                    <p><a href="services.html">Our Services</a></p>
+                    <p><a href="products.html">Loan Products</a></p>
+                    <p><a href="real-estate.html">Real Estate</a></p>
+                    <p><a href="profile.html">User Profile</a></p>
+                    <p><a href="contact.html">Contact Us</a></p>
+                    <p><a href="faq.html">FAQ</a></p>
+                </div>
+                <div class="footer-section">
+                    <h3>Loan Services</h3>
+                    <p><a href="loan-house-purchase.html">Home Purchase Loans</a></p>
+                    <p><a href="loan-land-purchase.html">Land Purchase Loans</a></p>
+                    <p><a href="loan-personal.html">Personal Loans</a></p>
+                    <p><a href="loan-business.html">Business Loans</a></p>
+                    <p><a href="loan-land-mortgage.html">Land Mortgage Financing</a></p>
+                    <p><a href="loan-house-mortgage.html">House Mortgage Solutions</a></p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p>📞 +91 9597 415253, +91 9342409595</p>
+                    <p>✉️ avgmassociates@gmail.com</p>
+                    <p>📍 Karur, Tamil Nadu</p>
+                    <p><a href="contact.html">Get in Touch</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 AVGM Financial Services. All rights reserved. | Real Estate & Loan Experts You Can Trust</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating CTA -->
+    <a href="contact.html" class="floating-cta" title="Contact Us">💬</a>
+
+    <script src="js/main.js"></script>
+    <script>
+        // Mortgage Calculator
+        document.addEventListener('DOMContentLoaded', function() {
+            const propertyValue = document.getElementById('propertyValue');
+            const loanPercentage = document.getElementById('loanPercentage');
+            const mortgageTenure = document.getElementById('mortgageTenure');
+            const mortgageRate = document.getElementById('mortgageRate');
+
+            function calculateMortgage() {
+                const propertyVal = parseFloat(propertyValue.value);
+                const loanPercent = parseFloat(loanPercentage.value);
+                const principal = (propertyVal * loanPercent) / 100;
+                const tenure = parseFloat(mortgageTenure.value);
+                const rate = parseFloat(mortgageRate.value) / 12 / 100;
+
+                const emi = (principal * rate * Math.pow(1 + rate, tenure)) / (Math.pow(1 + rate, tenure) - 1);
+                const totalInterest = (emi * tenure) - principal;
+                const processingFee = principal * 0.01; // 1% processing fee
+
+                // Update displays
+                document.getElementById('propertyValueDisplay').textContent = '₹' + (propertyVal / 100000).toFixed(0) + ' Lakhs';
+                document.getElementById('loanAmountDisplay').textContent = '₹' + (principal / 100000).toFixed(0) + ' Lakhs';
+                document.getElementById('tenureDisplay').textContent = tenure + ' months';
+                document.getElementById('rateDisplay').textContent = mortgageRate.value + '%';
+                document.getElementById('mortgageEMI').textContent = '₹' + Math.round(emi).toLocaleString();
+                document.getElementById('finalLoanAmount').textContent = '₹' + Math.round(principal).toLocaleString();
+                document.getElementById('totalMortgageInterest').textContent = '₹' + Math.round(totalInterest).toLocaleString();
+                document.getElementById('processingFee').textContent = '₹' + Math.round(processingFee).toLocaleString();
+            }
+
+            [propertyValue, loanPercentage, mortgageTenure, mortgageRate].forEach(element => {
+                element.addEventListener('input', calculateMortgage);
+            });
+
+            calculateMortgage(); // Initial calculation
+        });
+    </script>
+</body>
+</html>
