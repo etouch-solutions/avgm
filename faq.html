@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frequently Asked Questions - AVGM Associates</title>
+    <meta name="description" content="Find answers to common questions about loans, real estate services, and AVGM Associates processes.">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav-container">
+            <a href="index.html" class="logo">AVGM <span>Associates</span></a>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="real-estate.html">Real Estate</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="faq.html" class="nav-link actives">faq</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" style="min-height: 50vh; background: linear-gradient(135deg, var(--primary-blue), var(--accent-gold));">
+        <div class="container">
+            <div class="hero-content text-center">
+                <h1>Frequently Asked Questions</h1>
+                <p>Find quick answers to your most common questions</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search FAQ -->
+    <section class="section" style="background: var(--light-gray); padding: 2rem 0;">
+        <div class="container">
+            <div class="text-center fade-in">
+                <div style="max-width: 600px; margin: 0 auto;">
+                    <input type="text" id="faqSearch" placeholder="Search for questions..." style="width: 100%; padding: 1rem; border: 2px solid var(--primary-blue); border-radius: var(--border-radius); font-size: 1.1rem;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Categories -->
+    <section class="section">
+        <div class="container">
+            <div class="text-center fade-in" style="margin-bottom: 3rem;">
+                <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 1rem;">
+                    <button class="btn category-btn active" data-category="all">All Questions</button>
+                    <button class="btn btn-outline category-btn" data-category="loans">Loans</button>
+                    <button class="btn btn-outline category-btn" data-category="real-estate">Real Estate</button>
+                    <button class="btn btn-outline category-btn" data-category="process">Process</button>
+                    <button class="btn btn-outline category-btn" data-category="documents">Documents</button>
+                </div>
+            </div>
+
+            <!-- Loan FAQs -->
+            <div class="faq-category" data-category="loans">
+                <h2 style="color: var(--primary-blue); margin-bottom: 2rem;">💰 Loan Related Questions</h2>
+                
+                <div class="accordion fade-in">
+                    <div class="accordion-header">
+                        <h3>What is the minimum income required for a home loan?</h3>
+                        <span>+</span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>The minimum income requirement varies by lender and loan amount. Generally, for home loans:</p>
+                        <ul>
+                            <li>Salaried individuals: ₹25,000 per month minimum</li>
+                            <li>Self-employed: ₹2,00,000 annual income minimum</li>
+                            <li>Your EMI should not exceed 50-60% of your net monthly income</li>
+                            <li>We work with multiple lenders to find the best match for your income profile</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="accordion fade-in">
+                    <div class="accordion-header">
+                        <h3>How long does loan approval take?</h3>
+                        <span>+</span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Loan approval timelines depend on the loan type and completeness of documentation:</p>
+                        <ul>
+                            <li>Pre-approval: 24-48 hours with basic documents</li>
+                            <li>Home loans: 15-20 working days for complete approval</li>
+                            <li>Personal loans: 24 hours to 3 working days</li>
+                            <li>Business loans: 5-7 working days</li>
+                            <li>Our team ensures faster processing with complete documentation support</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="accordion fade-in">
+                    <div class="accordion-header">
+                        <h3>What is the maximum loan amount I can get?</h3>
+                        <span>+</span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Maximum loan amounts vary by loan type and your financial profile:</p>
+                        <ul>
+                            <li>Home Purchase: Up to ₹5 crores (85-90% of property value)</li>
+                            <li>Land Purchase: Up to ₹2 crores (80% of land value)</li>
+                            <li>Personal Loans: Up to ₹40 lakhs</li>
+                            <li>Business Loans: Up to ₹10 crores</li>
+                            <li>Final amount depends on income, credit score, and repayment capacity</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="accordion fade-in">
+                    <div class="accordion-header">
+                        <h3>Can I get a loan with a low CIBIL score?</h3>
+                        <span>+</span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Yes, we can help even with lower credit scores:</p>
+                        <ul>
+                            <li>CIBIL 750+: Best interest rates and quick approval</li>
+                            <li>CIBIL 650-750: Good rates with standard processing</li>
+                            <li>CIBIL 550-650: Higher rates but approval possible</li>
+                            <li>Below 550: We'll help improve your score first</li>
+                            <li>We have lenders who specialize in low CIBIL score cases</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Real Estate FAQs -->
+            <div class="faq-category" data-category="real-estate">
+                <h2 style="color: var(--primary-blue); margin-bottom: 2rem;">🏠 Real Estate Questions</h2>
+                
+                <div class="accordion fade-in">
+                    <div class="accordion-header">
+                        <h3>Do you charge for property search services?</h3>
+                        <span>+</span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Our property search and consultation services are completely free for buyers:</p>
+                        <ul>
+                            <li>No upfront charges for property search</li>
+                            <li>Free site visits and property inspections</li>
+                            <li>Free legal verification guidance</li>
+                            <li>We earn commission from builders/sellers only after successful transactions</li>
+                            <li>Transparent process with no hidden costs for buyers</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="accordion fade-in">
+                    <div class="accordion-header">
+                        <h3>How do you verify property legal status?</h3>
+                        <span>+</span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>We conduct comprehensive legal verification:</p>
+                        <ul>
+                            <li>Title deed verification and chain of ownership</li>
+                            <li>Encumbrance certificate check</li>
+                            <li>Approved plan verification</li>
+                            <li>NOC from relevant authorities</li>
+                            <li>Property tax and utility clearances</li>
+                            <li>Bank loan clearance certificate if applicable</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="accordion fade-in">
+                    <div class="accordion-header">
+                        <h3>What areas do you cover for real estate services?</h3>
+                        <span>+</span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>We provide real estate services across major locations:</p>
+                        <ul>
+                            <li>Mumbai: All suburbs (Western, Central, Eastern)</li>
+                            <li>Navi Mumbai: Vashi, CBD Belapur, Kharghar, Panvel</li>
+                            <li>Thane: Thane West/East, Ghodbunder Road</li>
+                            <li>Pune: City areas, Baner, Wakad, Hinjewadi</li>
+                            <li>Expanding coverage across Maharashtra</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="accordion fade-in">
+                    <div class="accordion-header">
+                        <h3>How accurate are your property valuations?</h3>
+                        <span>+</span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Our valuations are highly accurate and bank-approved:</p>
+                        <ul>
+                            <li>Certified valuers with 10+ years experience</li>
+                            <li>Current market rate analysis</li>
+                            <li>Comparable property price evaluation</li>
+                            <li>Location and infrastructure factor consideration</li>
+                            <li>95%+ accuracy rate accepted by all major banks</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Process FAQs -->
+            <div class="faq-category" data-category="process">
+                <h2 style="color: var(--primary-blue); margin-bottom: 2rem;">⚙️ Process Related Questions</h2>
+                
+                <div class="accordion fade-in">
+                    <div class="accordion-header">
+                        <h3>What is your service process for home loan applications?</h3>
+                        <span>+</span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Our streamlined 4-step process:</p>
+                        <ol>
+                            <li><strong>Initial Consultation:</strong> Understanding your requirements and financial profile</li>
+                            <li><strong>Documentation:</strong> Helping you gather and prepare all required documents</li>
+                            <li><strong>Lender Selection:</strong> Matching you with the best lender based on your profile</li>
+                            <li><strong>Follow-up:</strong> Regular updates until loan disbursement</li>
+                        </ol>
+                        <p>We assign a dedicated relationship manager for personalized service throughout the process.</p>
+                    </div>
+                </div>
+
+                <div class="accordion fade-in">
+                    <div class="accordion-header">
+                        <h3>Do you handle the entire loan process or just applications?</h3>
+                        <span>+</span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>We provide end-to-end loan assistance:</p>
+                        <ul>
+                            <li>Pre-qualification and eligibility assessment</li>
+                            <li>Documentation preparation and submission</li>
+                            <li>Application tracking and follow-up</li>
+                            <li>Property valuation coordination</li>
+                            <li>Legal verification assistance</li>
+                            <li>Loan disbursement coordination</li>
+                            <li>Post-disbursement support</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="accordion fade-in">
+                    <div class="accordion-header">
+                        <h3>How do you ensure I get the best interest rates?</h3>
+                        <span>+</span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>We have multiple strategies to secure the best rates:</p>
+                        <ul>
+                            <li>Partnerships with 50+ banks and financial institutions</li>
+                            <li>Real-time rate comparison across lenders</li>
+                            <li>Profile optimization to qualify for premium rates</li>
+                            <li>Negotiation based on your creditworthiness</li>
+                            <li>Special schemes and promotional offers access</li>
+                            <li>Regular rate monitoring and switching advice</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Documents FAQs -->
+            <div class="faq-category" data-category="documents">
+                <h2 style="color: var(--primary-blue); margin-bottom: 2rem;">📋 Documentation Questions</h2>
+                
+                <div class="accordion fade-in">
+                    <div class="accordion-header">
+                        <h3>What documents do I need for a home loan application?</h3>
+                        <span>+</span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Standard documents required for home loan:</p>
+                        <h4>Identity & Address Proof:</h4>
+                        <ul>
+                            <li>PAN Card, Aadhaar Card</li>
+                            <li>Passport, Voter ID, Driving License</li>
+                            <li>Utility bills for address proof</li>
+                        </ul>
+                        <h4>Income Proof:</h4>
+                        <ul>
+                            <li>Salary slips (last 3 months)</li>
+                            <li>Bank statements (last 6 months)</li>
+                            <li>IT returns (last 2-3 years)</li>
+                            <li>Form 16 / Employment certificate</li>
+                        </ul>
+                        <h4>Property Documents:</h4>
+                        <ul>
+                            <li>Sale agreement</li>
+                            <li>Property papers</li>
+                            <li>Approved building plans</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="accordion fade-in">
+                    <div class="accordion-header">
+                        <h3>Can you help with document preparation?</h3>
+                        <span>+</span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Yes, we provide comprehensive documentation support:</p>
+                        <ul>
+                            <li>Document checklist based on your loan type</li>
+                            <li>Format guidance for self-employed applications</li>
+                            <li>Digital document scanning and organization</li>
+                            <li>Missing document identification and guidance</li>
+                            <li>Document verification before submission</li>
+                            <li>Direct submission to lenders on your behalf</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="accordion fade-in">
+                    <div class="accordion-header">
+                        <h3>What if I don't have all the required documents?</h3>
+                        <span>+</span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>We can help you with alternative documentation:</p>
+                        <ul>
+                            <li>Alternative income proof options</li>
+                            <li>Bank statement-based loans</li>
+                            <li>Co-applicant addition to strengthen application</li>
+                            <li>Step-by-step guidance to obtain missing documents</li>
+                            <li>Lender-specific requirement optimization</li>
+                            <li>We'll find the best solution based on available documents</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact for More Questions -->
+    <section class="section" style="background: var(--primary-blue); color: var(--white);">
+        <div class="container text-center">
+            <h2 class="fade-in" style="color: var(--white);">Still Have Questions?</h2>
+            <p class="fade-in" style="font-size: 1.3rem; margin-bottom: 2rem;">Our experts are ready to provide personalized answers to your specific questions.</p>
+            <div class="fade-in">
+                <a href="contact.html" class="btn btn-gold">Contact Expert</a>
+                <a href="tel:+919876543210" class="btn btn-outline" style="margin-left: 1rem;">Call Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>AVGM Financial Services</h3>
+                    <p>Your trusted partner in real estate and financial solutions. We provide comprehensive services to help you achieve your property and financial goals.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <p><a href="index.html">Home</a></p>
+                    <p><a href="about.html">About Us</a></p>
+                    <p><a href="services.html">Our Services</a></p>
+                    <p><a href="products.html">Loan Products</a></p>
+                    <p><a href="real-estate.html">Real Estate</a></p>
+                    <p><a href="profile.html">User Profile</a></p>
+                    <p><a href="contact.html">Contact Us</a></p>
+                    <p><a href="faq.html">FAQ</a></p>
+                </div>
+                <div class="footer-section">
+                    <h3>Loan Services</h3>
+                    <p><a href="loan-house-purchase.html">Home Purchase Loans</a></p>
+                    <p><a href="loan-land-purchase.html">Land Purchase Loans</a></p>
+                    <p><a href="loan-personal.html">Personal Loans</a></p>
+                    <p><a href="loan-business.html">Business Loans</a></p>
+                    <p><a href="loan-land-mortgage.html">Land Mortgage Financing</a></p>
+                    <p><a href="loan-house-mortgage.html">House Mortgage Solutions</a></p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p>📞 +91 9597 415253, +91 9342409595</p>
+                    <p>✉️ avgmassociates@gmail.com</p>
+                    <p>📍 Karur, Tamil Nadu</p>
+                    <p><a href="contact.html">Get in Touch</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 AVGM Financial Services. All rights reserved. | Real Estate & Loan Experts You Can Trust</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating CTA -->
+    <a href="contact.html" class="floating-cta" title="Contact Us">💬</a>
+
+    <script src="js/main.js"></script>
+    <script>
+        // FAQ Search and Category Filter
+        document.addEventListener('DOMContentLoaded', function() {
+            const searchInput = document.getElementById('faqSearch');
+            const categoryButtons = document.querySelectorAll('.category-btn');
+            const faqSections = document.querySelectorAll('.faq-category');
+            const accordions = document.querySelectorAll('.accordion');
+
+            // Category filtering
+            categoryButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const category = this.getAttribute('data-category');
+                    
+                    // Update active button
+                    categoryButtons.forEach(btn => {
+                        btn.classList.remove('active');
+                        btn.classList.add('btn-outline');
+                    });
+                    this.classList.add('active');
+                    this.classList.remove('btn-outline');
+
+                    // Show/hide sections
+                    if (category === 'all') {
+                        faqSections.forEach(section => section.style.display = 'block');
+                    } else {
+                        faqSections.forEach(section => {
+                            if (section.getAttribute('data-category') === category) {
+                                section.style.display = 'block';
+                            } else {
+                                section.style.display = 'none';
+                            }
+                        });
+                    }
+                });
+            });
+
+            // Search functionality
+            searchInput.addEventListener('input', function() {
+                const searchTerm = this.value.toLowerCase();
+                
+                accordions.forEach(accordion => {
+                    const question = accordion.querySelector('h3').textContent.toLowerCase();
+                    const answer = accordion.querySelector('.accordion-content').textContent.toLowerCase();
+                    
+                    if (question.includes(searchTerm) || answer.includes(searchTerm) || searchTerm === '') {
+                        accordion.style.display = 'block';
+                    } else {
+                        accordion.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

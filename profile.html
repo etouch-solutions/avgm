@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile & Eligibility Check - AVGM Associates</title>
+    <meta name="description" content="Check your loan eligibility and create your financial profile with AVGM Associates.">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav-container">
+            <a href="index.html" class="logo">AVGM <span>Associates</span></a>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="real-estate.html">Real Estate</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" style="min-height: 50vh; background: linear-gradient(135deg, var(--primary-blue), var(--accent-gold));">
+        <div class="container">
+            <div class="hero-content text-center">
+                <h1>Check Your Loan Eligibility</h1>
+                <p>Create your financial profile and discover your borrowing potential</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CIBIL Score Display -->
+    <section class="section">
+        <div class="container text-center">
+            <h2 class="section-title fade-in">Your Credit Health</h2>
+            <div class="cibil-meter fade-in" data-score="750">
+                <div class="meter-circle">
+                    <div class="meter-inner">
+                        <div class="score-number">750</div>
+                        <p style="margin: 0; font-size: 0.9rem;">CIBIL Score</p>
+                    </div>
+                </div>
+            </div>
+            <p class="fade-in" style="color: var(--primary-blue); font-weight: 600; margin-top: 1rem;">
+                Excellent Credit Score - You qualify for the best interest rates!
+            </p>
+        </div>
+    </section>
+
+   <!-- ===== Form Wizard Section ===== -->
+<section class="section" style="background: var(--light-gray);">
+  <div class="container">
+    <div class="form-wizard fade-in">
+      <div class="wizard-steps">
+        <div class="wizard-step active"><div class="step-number">1</div><p>Personal Details</p></div>
+        <div class="wizard-step"><div class="step-number">2</div><p>Employment Info</p></div>
+        <div class="wizard-step"><div class="step-number">3</div><p>Financial Details</p></div>
+        <div class="wizard-step"><div class="step-number">4</div><p>Loan Requirements</p></div>
+      </div>
+
+      <div class="wizard-content">
+        <form id="eligibilityForm" action="https://formsubmit.co/sabinayabme@gmail.com" method="POST">
+
+          <!-- Hidden FormSubmit Options -->
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_subject" value="New Loan Application">
+          <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you.html">
+
+          <!-- STEP 1 -->
+          <div class="step-content" id="step1">
+            <h3 style="color: var(--primary-blue); margin-bottom: 2rem;">Personal Information</h3>
+            <div class="grid grid-2">
+              <div class="form-group"><label>Full Name *</label><input type="text" name="Full Name" required></div>
+              <div class="form-group"><label>Email *</label><input type="email" name="Email" required></div>
+              <div class="form-group"><label>Phone *</label><input type="tel" name="Phone" required></div>
+              <div class="form-group"><label>Date of Birth *</label><input type="date" name="Date of Birth" required></div>
+              <div class="form-group"><label>PAN Card *</label><input type="text" name="PAN Card Number" required></div>
+              <div class="form-group">
+                <label>City *</label>
+                <select name="City" required>
+                  <option value="">Select City</option>
+                  <option>Mumbai</option>
+                  <option>Pune</option>
+                  <option>Thane</option>
+                  <option>Navi Mumbai</option>
+                  <option>Other</option>
+                </select>
+              </div>
+            </div>
+            <div style="text-align: right; margin-top: 2rem;">
+              <button type="button" class="btn next-step">Next Step</button>
+            </div>
+          </div>
+
+          <!-- STEP 2 -->
+          <div class="step-content" id="step2" style="display: none;">
+            <h3 style="color: var(--primary-blue); margin-bottom: 2rem;">Employment Information</h3>
+            <div class="grid grid-2">
+              <div class="form-group">
+                <label>Employment Type *</label>
+                <select name="Employment Type" required>
+                  <option value="">Select</option>
+                  <option>Salaried</option>
+                  <option>Self Employed</option>
+                  <option>Business Owner</option>
+                  <option>Professional</option>
+                </select>
+              </div>
+              <div class="form-group"><label>Company Name *</label><input type="text" name="Company Name" required></div>
+              <div class="form-group">
+                <label>Work Experience</label>
+                <select name="Experience">
+                  <option value="">Select</option>
+                  <option>0-2 years</option>
+                  <option>2-5 years</option>
+                  <option>5-10 years</option>
+                  <option>10+ years</option>
+                </select>
+              </div>
+              <div class="form-group"><label>Designation</label><input type="text" name="Designation"></div>
+            </div>
+            <div style="text-align: right; margin-top: 2rem;">
+              <button type="button" class="btn btn-outline prev-step" style="margin-right: 1rem;">Previous</button>
+              <button type="button" class="btn next-step">Next Step</button>
+            </div>
+          </div>
+
+          <!-- STEP 3 -->
+          <div class="step-content" id="step3" style="display: none;">
+            <h3 style="color: var(--primary-blue); margin-bottom: 2rem;">Financial Information</h3>
+            <div class="grid grid-2">
+              <div class="form-group">
+                <label>Monthly Income *</label>
+                <select name="Monthly Income" required>
+                  <option value="">Select</option>
+                  <option>₹25,000 - ₹50,000</option>
+                  <option>₹50,000 - ₹1,00,000</option>
+                  <option>₹1,00,000 - ₹2,00,000</option>
+                  <option>₹2,00,000 - ₹5,00,000</option>
+                  <option>₹5,00,000+</option>
+                </select>
+              </div>
+              <div class="form-group"><label>Existing Loan EMIs</label><input type="number" name="Existing Loans" placeholder="EMI Amount"></div>
+              <div class="form-group">
+                <label>Credit Card Limit</label>
+                <select name="Credit Card Limit">
+                  <option value="">Select</option>
+                  <option>No Credit Card</option>
+                  <option>Up to ₹1,00,000</option>
+                  <option>₹1,00,000 - ₹5,00,000</option>
+                  <option>₹5,00,000+</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>Bank</label>
+                <select name="Bank">
+                  <option value="">Select</option>
+                  <option>SBI</option>
+                  <option>HDFC</option>
+                  <option>ICICI</option>
+                  <option>Axis</option>
+                  <option>Other</option>
+                </select>
+              </div>
+            </div>
+            <div style="text-align: right; margin-top: 2rem;">
+              <button type="button" class="btn btn-outline prev-step" style="margin-right: 1rem;">Previous</button>
+              <button type="button" class="btn next-step">Next Step</button>
+            </div>
+          </div>
+
+          <!-- STEP 4 -->
+          <div class="step-content" id="step4" style="display: none;">
+            <h3 style="color: var(--primary-blue); margin-bottom: 2rem;">Loan Requirements</h3>
+            <div class="grid grid-2">
+              <div class="form-group">
+                <label>Loan Type *</label>
+                <select name="Loan Type" required>
+                  <option value="">Select</option>
+                  <option>Home Purchase</option>
+                  <option>Land Purchase</option>
+                  <option>Home Mortgage</option>
+                  <option>Personal</option>
+                  <option>Business</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>Loan Amount *</label>
+                <select name="Loan Amount" required>
+                  <option value="">Select</option>
+                  <option>₹5,00,000</option>
+                  <option>₹10,00,000</option>
+                  <option>₹25,00,000</option>
+                  <option>₹50,00,000</option>
+                  <option>₹1,00,00,000</option>
+                  <option>Custom Amount</option>
+                </select>
+              </div>
+              <div class="form-group"><label>Property Value</label><input type="number" name="Property Value"></div>
+              <div class="form-group">
+                <label>Loan Tenure</label>
+                <select name="Loan Tenure">
+                  <option value="">Select</option>
+                  <option>5 years</option>
+                  <option>10 years</option>
+                  <option>15 years</option>
+                  <option>20 years</option>
+                  <option>30 years</option>
+                </select>
+              </div>
+            </div>
+            <div style="text-align: right; margin-top: 2rem;">
+              <button type="button" class="btn btn-outline prev-step" style="margin-right: 1rem;">Previous</button>
+              <button type="submit" class="btn btn-gold">Check Eligibility</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <!-- EMI Calculator -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title text-center fade-in">EMI Calculator</h2>
+            <div class="emi-calculator fade-in">
+                <div class="grid grid-2">
+                    <div>
+                        <div class="slider-container">
+                            <label for="loanAmountSlider">Loan Amount: <span id="loanAmountValue">₹25,00,000</span></label>
+                            <input type="range" id="loanAmount" class="slider" min="100000" max="10000000" value="2500000" step="100000">
+                        </div>
+                        <div class="slider-container">
+                            <label for="tenureSlider">Loan Tenure: <span id="tenureValue">180 months</span></label>
+                            <input type="range" id="tenure" class="slider" min="12" max="360" value="180" step="12">
+                        </div>
+                        <div class="slider-container">
+                            <label for="interestSlider">Interest Rate: <span id="interestValue">9.5%</span></label>
+                            <input type="range" id="interestRate" class="slider" min="6" max="20" value="9.5" step="0.1">
+                        </div>
+                    </div>
+                    <div style="display: flex; align-items: center; justify-content: center;">
+                        <div style="text-align: center; background: var(--primary-blue); color: var(--white); padding: 3rem; border-radius: var(--border-radius);">
+                            <h3>Monthly EMI</h3>
+                            <div style="font-size: 2.5rem; font-weight: 700; color: var(--accent-gold);" id="emiValue">₹26,883</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="section" style="background: var(--accent-gold); color: var(--primary-blue);">
+        <div class="container text-center">
+            <h2 class="fade-in">Ready to Apply?</h2>
+            <p class="fade-in" style="font-size: 1.3rem; margin-bottom: 2rem;">Your profile looks good! Let's move forward with your loan application.</p>
+            <div class="fade-in">
+                <a href="contact.html" class="btn" style="background: var(--primary-blue); color: var(--white);">Start Application</a>
+                <a href="products.html" class="btn btn-outline" style="margin-left: 1rem; border-color: var(--primary-blue); color: var(--primary-blue);">View Loan Products</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>AVGM Financial Services</h3>
+                    <p>Your trusted partner in real estate and financial solutions. We provide comprehensive services to help you achieve your property and financial goals.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <p><a href="index.html">Home</a></p>
+                    <p><a href="about.html">About Us</a></p>
+                    <p><a href="services.html">Our Services</a></p>
+                    <p><a href="products.html">Loan Products</a></p>
+                    <p><a href="real-estate.html">Real Estate</a></p>
+                    <p><a href="profile.html">User Profile</a></p>
+                    <p><a href="contact.html">Contact Us</a></p>
+                    <p><a href="faq.html">FAQ</a></p>
+                </div>
+                <div class="footer-section">
+                    <h3>Loan Services</h3>
+                    <p><a href="loan-house-purchase.html">Home Purchase Loans</a></p>
+                    <p><a href="loan-land-purchase.html">Land Purchase Loans</a></p>
+                    <p><a href="loan-personal.html">Personal Loans</a></p>
+                    <p><a href="loan-business.html">Business Loans</a></p>
+                    <p><a href="loan-land-mortgage.html">Land Mortgage Financing</a></p>
+                    <p><a href="loan-house-mortgage.html">House Mortgage Solutions</a></p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p>📞 +91 9597 415253, +91 9342409595</p>
+                    <p>✉️ avgmassociates@gmail.com</p>
+                    <p>📍 Karur, Tamil Nadu</p>
+                    <p><a href="contact.html">Get in Touch</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 AVGM Financial Services. All rights reserved. | Real Estate & Loan Experts You Can Trust</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating CTA -->
+    <a href="contact.html" class="floating-cta" title="Contact Us">💬</a>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
