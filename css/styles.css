@@ -55,7 +55,7 @@ p {
 
 /* ===== HEADER & NAVIGATION ===== */
 .header {
-  position: fixed;
+  
   top: 0;
   width: 100%;
   background: var(--white);
@@ -439,7 +439,8 @@ p {
 .timeline-section {
   position: relative;
   padding: 100px 20px;
-  background: url('https://img.freepik.com/free-photo/view-city-with-buildings-trees_1127-352.jpg') no-repeat center center / cover;
+  background-image: url('img/beautiful-landscape-with-small-village.jpg');
+  
   color: #fff;
   z-index: 1;
 }
